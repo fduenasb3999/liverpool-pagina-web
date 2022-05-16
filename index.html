@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    
-    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="./script.js"></script>
+    <title>Pagina web Liverpool FC</title>
 </head>
 <body>
     <header></header>
@@ -97,9 +98,19 @@
             </figcaption>
         </figure>
     </div>
-    <section>
-        
-    </section>
+    <br>
+
+    <div align="center">
+        <button class="button boton" id="boton1" onclick="cargarGraficoGoles()"><strong>Luis Diaz - Goles</strong></button>
+    </div>
+
+    <div align="center" >
+        <canvas  id="myChart"  style="width:100%;max-width:600px" ></canvas>
+    </div>
+    <br>
+    <div align="center">
+        <button class="button boton" id="boton2" style="display:none" onclick="ocultar()"><strong>Ocultar gráfico</strong></button>
+    </div>
 
     <br>
     <br>
